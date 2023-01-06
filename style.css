@@ -1,0 +1,23 @@
+body {
+  margin: 40px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-gap: 10px;
+}
+
+.box {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  padding: 25px 25px 25px 25px;
+  font-size: 150%;
+  border: 2px solid #000000;
+}
+
+.wrapepr {
+  text-align: center;
+}
