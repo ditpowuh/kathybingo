@@ -29,7 +29,7 @@ options = [
 ]
 
 function shuffle(array) {
-  let currentIndex = array.length,  randomIndex;
+  let currentIndex = array.length, randomIndex;
   while (currentIndex != 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
@@ -40,15 +40,16 @@ function shuffle(array) {
 
 
 function change(number) {
-  if (allBoxes[number - 1].style.color == "rgb(0, 255, 0)") {
+  if (allBoxes[number - 1].style.color != "rgb(0, 0, 0)") {
     allBoxes[number - 1].style.color = "#000000";
   }
   else {
-    allBoxes[number - 1].style.color = "#00ff00";
+    allBoxes[number - 1].style.color = "#f4dec1";
   }
 }
 
 options = shuffle(options);
 for (let i = 0; i < allBoxes.length; i++) {
   allBoxes[i].innerHTML = options[i];
+  allBoxes[i].style.color = "rgb(0, 0, 0)";
 }

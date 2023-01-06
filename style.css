@@ -1,23 +1,44 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
 body {
-  margin: 40px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-bottom: 350px;
+}
+
+#board {
+  z-index: -1;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .main {
+  padding-top: 305px;
+  padding-left: 80px;
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px;
-  grid-gap: 10px;
+  grid-template-columns: 184px 184px 184px 184px 184px;
 }
 
 .box {
   background-color: #ffffff;
   color: #000000;
   border-radius: 5px;
-  padding: 25px 25px 25px 25px;
+  width: 180px;
+  height: 178px;
   font-size: 150%;
-  border: 2px solid #000000;
+  border: 3px solid #000000;
+  user-select: none;
 }
 
-.wrapepr {
+.wrapper {
   text-align: center;
 }
